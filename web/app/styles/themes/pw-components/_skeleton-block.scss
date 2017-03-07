@@ -1,0 +1,7 @@
+.pw-skeleton-block {
+    @include background-shimmer;
+
+    &.short {
+        margin: 5px 0;
+    }
+}

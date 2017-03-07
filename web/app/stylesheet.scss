@@ -1,0 +1,77 @@
+@charset 'UTF-8';
+
+// Variables
+// ---
+//
+// Variables are scaffolded from github.com/mobify/vellum
+
+@import 'styles/variables';
+
+
+// Mixins and Functions
+// ---
+
+@import 'styles/lib';
+@import "node_modules/spline-scss/dist/spline";
+@import "node_modules/susy/sass/susy";
+
+
+// Vendor
+// ---
+
+@import 'styles/vendor';
+
+
+// Animations
+// ---
+
+@import 'styles/animations';
+
+
+// Sass utilities
+// ---
+//
+// Libraries of mixins/functions
+
+@import 'styles/utilities';
+
+
+// Base
+// ---
+//
+// Default styles for html elements.
+//
+// Provides a base for look and feel; alter as needed.
+// Base styles are generated from github.com/mobify/vellum
+
+@import 'styles/base';
+
+
+// Components
+// ---
+
+@import 'styles/components';
+
+
+// Themes
+// ---
+//
+// Custom styles for the Progressive Web Components, or other project themes
+
+@import 'styles/themes';
+
+
+// Templates
+// ---
+
+@import 'styles/templates';
+
+
+// Overrides
+// ---
+//
+// These overrides are for styling components and templates (pages) that need to
+// be pulled in to the site as-is or cannot be placed in their original location
+// (such as bower components).
+
+@import 'styles/overrides';

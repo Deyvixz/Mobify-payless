@@ -1,0 +1,164 @@
+// Padding
+// ===
+
+// Miscellanous
+// ---
+
+.u-padding {
+    @include padding(true);
+}
+
+.u-padding-0 {
+    @include padding-0(true);
+}
+
+.u-padding-sm {
+    @include padding-sm(true); // x0.5
+}
+
+.u-padding-md {
+    @include padding-md(true); // x1.5
+}
+
+.u-padding-lg {
+    @include padding-lg(true); // x2
+}
+
+
+// Vertical Padding
+// ---
+//
+// Granular control over vertical spacing independent of a component. Includes
+// values based on global spacing.
+//
+// Suffixes:
+// 0:  none
+// sm: small
+// md: medium
+// lg: large
+
+.u-padding-top {
+    @include padding-top(true); // x1
+}
+
+.u-padding-top-0 {
+    @include padding-top-0(true);
+}
+
+.u-padding-top-sm {
+    @include padding-top-sm(true); // x0.5
+}
+
+.u-padding-top-md {
+    @include padding-top-md(true); // x1.5
+}
+
+.u-padding-top-lg {
+    @include padding-top-lg(true); // x2
+}
+
+.u-padding-bottom {
+    @include padding-bottom(true); // x1
+}
+
+.u-padding-bottom-0 {
+    @include padding-bottom-0(true);
+}
+
+.u-padding-bottom-sm {
+    @include padding-bottom-sm(true); // x0.5
+}
+
+.u-padding-bottom-md {
+    @include padding-bottom-md(true); // x1.5
+}
+
+.u-padding-bottom-lg {
+    @include padding-bottom-lg(true); // x2
+}
+
+
+// Horizontal Padding
+// ---
+//
+// Granular control over horizontal spacing independent of a component. Includes
+// values based on global spacing, and adds values based on relative typographic
+// sizes.
+//
+// `start` and `end` are writing-direction independent forms for `left` and
+// `right`. For right-to-left localizations, create an alternate version of this
+// stylesheet with the property directions reversed.
+//
+// Suffixes:
+//
+// 0:  none
+// th: thick space (about 1.5× a “normal” word space)
+// en: en space (half an em)
+// em: em space
+// sm: small
+// md: medium
+// lg: large
+
+.u-padding-start {
+    @include padding-start(true); // x1
+}
+
+.u-padding-start-0 {
+    @include padding-start-0(true);
+}
+
+.u-padding-start-th {
+    @include padding-start-th(true); // 0.333em
+}
+
+.u-padding-start-en {
+    @include padding-start-en(true); // 0.5em
+}
+
+.u-padding-start-em {
+    @include padding-start-em(true); // 1em
+}
+
+.u-padding-start-sm {
+    @include padding-start-sm(true); // x0.5
+}
+
+.u-padding-start-md {
+    @include padding-start-md(true); // x1.5
+}
+
+.u-padding-start-lg {
+    @include padding-start-lg(true); // x2
+}
+
+.u-padding-end {
+    @include padding-end(true); // x1
+}
+
+.u-padding-end-0 {
+    @include padding-end-0(true);
+}
+
+.u-padding-end-th {
+    @include padding-end-th(true); // 0.333em
+}
+
+.u-padding-end-en {
+    @include padding-end-en(true); // 0.5em
+}
+
+.u-padding-end-em {
+    @include padding-end-em(true); // 1em
+}
+
+.u-padding-end-sm {
+    @include padding-end-sm(true); // x0.5
+}
+
+.u-padding-end-md {
+    @include padding-end-md(true); // x1.5
+}
+
+.u-padding-end-lg {
+    @include padding-end-lg(true); // x2
+}
