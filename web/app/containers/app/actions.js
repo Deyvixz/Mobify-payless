@@ -13,6 +13,7 @@ import CheckoutShipping from '../checkout-shipping/container'
 import CheckoutPayment from '../checkout-payment/container'
 import CheckoutConfirmation from '../checkout-confirmation/container'
 import Home from '../home/container'
+import PrivacyCookie from '../privacy-cookie/container'
 import Login from '../login/container'
 import ProductDetails from '../product-details/container'
 import ProductList from '../product-list/container'
@@ -28,6 +29,7 @@ import * as footerActions from '../footer/actions'
 import * as navigationActions from '../navigation/actions'
 import * as productsActions from '../../store/products/actions'
 import * as categoriesActions from '../../store/categories/actions'
+import * as privacyActions from '../privacy-cookie/actions'
 
 import {OFFLINE_ASSET_URL} from './constants'
 import {closeModal} from '../../store/modals/actions'
@@ -140,6 +142,8 @@ export const fetchPage = (url, pageComponent, routeName, fetchUrl) => {
                     dispatch(checkoutConfirmationActions.process(receivedAction))
                     // Resets the cart count to 0
                     dispatch(cartActions.getCart())
+                } else if (pageComponent === PrivacyCookie) {
+                    dispatch(privacyActions.process(receivedAction))
                 }
                 dispatch(footerActions.process(receivedAction))
                 dispatch(navigationActions.process(receivedAction))
